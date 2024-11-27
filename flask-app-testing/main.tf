@@ -83,11 +83,11 @@ resource "aws_instance" "app-test-server" {
   }
 
   provisioner "remote-exec" {
-    inline = [ 
-        "chmod +x start-up.sh",
-        "sh start-up.sh",
-        "sleep 1"
-     ]
+    inline = [
+      "chmod +x start-up.sh",
+      "sh start-up.sh",
+      "sleep 1"
+    ]
   }
 }
 
