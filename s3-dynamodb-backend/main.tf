@@ -2,12 +2,12 @@ provider "aws" {
     region = "ap-southeast-1"
 }
 
-resource "aws_s3_bucket" "tf-lock" {
+resource "aws_s3_bucket" "tf-lock-bkt" {
     bucket = var.bucket_name
 }
 
 resource "aws_s3_bucket_versioning" "tf-lock-bkt-v" {
-    bucket = aws_s3_bucket.tf-lock.id
+    bucket = aws_s3_bucket.tf-lock-bkt.id
     versioning_configuration {
       status = "Enabled"
     }
