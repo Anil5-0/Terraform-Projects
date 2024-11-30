@@ -4,7 +4,7 @@ Designed and implemented a scalable AWS infrastructure using Terraform, with VPC
 
 ## Steps
 
-### step 1 : run terrafform init
+### step 1 : run terraform init
 
 init : downloads the plugin code and modules to interact with mentioned provider
 
