@@ -25,7 +25,7 @@ terraform plan
 apply : gives execution plan again and asks for yes/no prompt and performs accordingly 
 
 ```
-terraform plan
+terraform apply
 ```
 
 ### step 4 : run terraform destroy 
